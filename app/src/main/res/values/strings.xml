@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inventory Manager</string>
+
+    <!-- Categories Array -->
+    <string-array name="categories">
+        <item>Electronics</item>
+        <item>Furniture</item>
+        <item>Clothing</item>
+        <item>Food</item>
+        <item>Books</item>
+        <item>Tools</item>
+        <item>Sports</item>
+        <item>Toys</item>
+        <item>Health</item>
+        <item>Beauty</item>
+        <item>Automotive</item>
+        <item>Other</item>
+    </string-array>
+</resources>
