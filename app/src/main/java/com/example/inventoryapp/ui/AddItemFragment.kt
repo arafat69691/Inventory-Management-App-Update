@@ -38,11 +38,11 @@ class AddItemFragment : Fragment() {
     }
 
     private fun setupCategorySpinner() {
-        // Option 1: If you have categories in strings.xml
+
         val categories = if (resources.getIdentifier("categories", "array", requireContext().packageName) != 0) {
             resources.getStringArray(R.array.categories)
         } else {
-            // Option 2: Hardcoded categories as fallback
+
             arrayOf(
                 "Electronics",
                 "Furniture",

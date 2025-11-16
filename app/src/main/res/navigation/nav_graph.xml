@@ -28,6 +28,10 @@
     <fragment
         android:id="@+id/addItemFragment"
         android:name="com.example.inventoryapp.ui.AddItemFragment"
-        android:label="Add Item" />
+        android:label="Add Item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
 
 </navigation>
