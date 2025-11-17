@@ -28,6 +28,7 @@ class DashboardFragment : Fragment() {
     ): View {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,9 +43,13 @@ class DashboardFragment : Fragment() {
         observeData()
 
         // Navigate to InventoryListFragment when inventory card is clicked
-        binding.cardInventory.setOnClickListener {
-            findNavController().navigate(R.id.action_dashboard_to_inventoryList)
-        }
+//        binding.cardInventory.setOnClickListener {
+//            findNavController().navigate(R.id.action_dashboard_to_inventoryList)
+//        }
+//        val action =
+//            DashboardFragmentDirections.action_dashboard_to_inventoryList()
+//        findNavController().navigate(action)
+
     }
 
     private fun observeData() {

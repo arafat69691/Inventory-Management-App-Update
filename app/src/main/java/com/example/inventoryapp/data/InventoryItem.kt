@@ -13,5 +13,9 @@ data class InventoryItem(
     val price: Double,
     val description: String,
     val lowStockThreshold: Int,
-    val timestamp: Long = System.currentTimeMillis()
+    val timestamp: Long = System.currentTimeMillis(),
+    val createdAt: Long = System.currentTimeMillis(),
+    val updatedAt: Long = System.currentTimeMillis()
+
+
 )

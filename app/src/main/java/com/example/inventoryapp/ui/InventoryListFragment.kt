@@ -39,6 +39,9 @@ class InventoryListFragment : Fragment() {
         binding.fabAdd.setOnClickListener {
             findNavController().navigate(R.id.action_inventoryList_to_addItem)
         }
+        binding.editbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_inventoryListFragment_to_editItemFragment)
+        }
     }
 
     private fun setupRecyclerView() {

@@ -4,7 +4,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [InventoryItem::class], version = 1, exportSchema = false)
+@Database(entities = [InventoryItem::class, ItemHistory::class], version = 2, exportSchema = false)
 abstract class InventoryDatabase : RoomDatabase() {
     abstract fun inventoryDao(): InventoryDao
 
@@ -18,7 +18,8 @@ abstract class InventoryDatabase : RoomDatabase() {
                     context.applicationContext,
                     InventoryDatabase::class.java,
                     "inventory_database"
-                ).build()
+                )   .fallbackToDestructiveMigration()
+                    .build()
                 INSTANCE = instance
                 instance
             }
