@@ -6,12 +6,14 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
+    android:background="@color/background"
     app:cardElevation="4dp"
     android:foreground="?attr/selectableItemBackground">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#C0C9EE"
         android:padding="16dp">
 
         <TextView
@@ -30,7 +32,7 @@
             android:id="@+id/tv_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/category_bg"
             android:paddingHorizontal="12dp"
             android:paddingVertical="4dp"
@@ -71,9 +73,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:visibility="gone"
+            app:cardBackgroundColor="#FFEBEE"
             app:cardCornerRadius="8dp"
             app:cardElevation="0dp"
-            app:cardBackgroundColor="#FFEBEE"
             app:layout_constraintBottom_toBottomOf="@id/tv_quantity"
             app:layout_constraintStart_toEndOf="@id/tv_price"
             app:layout_constraintTop_toTopOf="@id/tv_quantity">
@@ -85,7 +87,7 @@
                 android:paddingVertical="2dp"
                 android:text="⚠ Low"
                 android:textColor="@color/error"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
         </com.google.android.material.card.MaterialCardView>

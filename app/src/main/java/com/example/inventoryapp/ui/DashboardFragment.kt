@@ -33,7 +33,6 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Setup RecyclerView for low stock items
         adapter = InventoryAdapter(onItemClick = {}, onDeleteClick = {})
         binding.rvLowStock.layoutManager = LinearLayoutManager(requireContext())
         binding.rvLowStock.adapter = adapter
@@ -42,9 +41,9 @@ class DashboardFragment : Fragment() {
         observeData()
 
         // Navigate to InventoryListFragment when inventory card is clicked
-        binding.cardInventory.setOnClickListener {
-            findNavController().navigate(R.id.action_dashboard_to_inventoryList)
-        }
+//        binding.cardInventory.setOnClickListener {
+//            findNavController().navigate(R.id.action_dashboard_to_inventoryList)
+//        }
     }
 
     private fun observeData() {

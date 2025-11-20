@@ -8,4 +8,9 @@
         android:id="@+id/inventoryListFragment"
         android:icon="@android:drawable/ic_menu_view"
         android:title="Inventory" />
+
+    <item
+        android:id="@+id/EditInventoryFragment"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Edit" />
 </menu>

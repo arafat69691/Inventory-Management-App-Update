@@ -25,6 +25,7 @@
             app:destination="@id/addItemFragment" />
     </fragment>
 
+    <!-- Add item to Dashboard -->
     <fragment
         android:id="@+id/addItemFragment"
         android:name="com.example.inventoryapp.ui.AddItemFragment"

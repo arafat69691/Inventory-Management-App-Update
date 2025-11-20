@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Inventory Manager</string>
+    <string name="app_logo">Inventory Management Logo</string>
+    <string name="tagline">Smart Inventory Management</string>
+    <string name="loading">Loading your workspace…</string>
+    <string name="version">Version 1.0.0</string>
 
     <!-- Categories Array -->
     <string-array name="categories">
